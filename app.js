@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
-
 const fs = require('fs');
+const generateMarkdown = require('./utils/page-template');
 
-const promptUser = () => {
+const questions = () => {
 
-    return inquirer.prompt([
+    inquirer.prompt([
         {
             type: 'input',
             name: 'projectName',
@@ -20,7 +20,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'name',
+            name: 'user',
             message: 'What is your name? (required)',
             validate: nameInput => {
                 if (nameInput) {
@@ -97,10 +97,10 @@ const promptUser = () => {
             }
         },
         {
-            type: 'checkbox',
-            name: 'Licence',
-            message: 'What licence applies to your project?',
-            choices: ['license1', 'license2', 'license3', 'license4', 'license5']
+            type: 'list',
+            name: 'license',
+            message: 'What license applies to your project?',
+            choices: ['N/A', 'Apache 2.0', 'GNU', 'ISC', 'IBM', 'MIT']
         },
         {
             type: 'input',
@@ -128,20 +128,26 @@ const promptUser = () => {
                 }
             }
         },
-    ])
-        .then((answers) => {
-            console.log(answers)
-
-            fs.writeFile("output.txt", JSON.stringify(answers, null, '\t'), (err) => {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log('success!');
-                }
-
-            })
-        })
+    ]) 
+    .then(function(info) {
+        var dataString = generateMarkdown(info)
+        console.log(dataString);
+        writeToFile('output.md', dataString);
+    })
 };
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('success!')
+        }
+    })
+}
 
 
-promptUser()
+
+// Function call to initialize app
+
+questions();
