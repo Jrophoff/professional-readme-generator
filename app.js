@@ -100,7 +100,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'What license applies to your project?',
-            choices: ['N/A', 'Apache 2.0', 'GNU', 'ISC', 'IBM', 'MIT']
+            choices: ['n/a', 'Apache License 2.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Boost Software License 1.0', 'Mozilla Public License 2.0', 'MIT License', 'The Unlicense']
         },
         {
             type: 'input',
@@ -123,7 +123,7 @@ const questions = () => {
                 if (emailInput) {
                     return true;
                 } else {
-                    console.log('Please a valid email!');
+                    console.log('Please enter a valid email!');
                     return false;
                 }
             }
