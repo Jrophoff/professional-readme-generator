@@ -50,10 +50,10 @@ function generateMarkdown(data) {
 ## Table of Contents
 
 - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [Tests](#tests)
 - [Questions](#questions)
     - [GitHub](#github)
     - [Email](#email)
@@ -63,7 +63,7 @@ function generateMarkdown(data) {
 
 #### ${data.description}
 
-### Installation
+## Installation
 
 #### ${data.installation}
 
@@ -71,11 +71,11 @@ function generateMarkdown(data) {
 
 #### ${data.usage}
 
-### Contributors
+## Contributors
 
 #### ${data.contribute}
 
-### Tests
+## Tests
 
 #### ${data.tests}
 
