@@ -24,7 +24,9 @@
 
 ## Usage
 
-#### Enter node app into the command line. Then answer the prompts.
+#### Enter node app into the command line. Then answer the prompts. Please view the following walkthrough video:
+
+https://watch.screencastify.com/v/m5ztDpl2LDDXyfdoQiVd
 
 ## Questions
 If you have further questions please reach out via GitHub or Email.
