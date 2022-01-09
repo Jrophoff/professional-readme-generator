@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "inquirer": "^8.2.0"
-  }
+  },
+  "name": "professional-readme-generator",
+  "description": "![License](https://img.shields.io/badge/License-MIT_License-blue)",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jrophoff/professional-readme-generator.git"
+  },
+  "author": "Jordan Ophoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jrophoff/professional-readme-generator/issues"
+  },
+  "homepage": "https://github.com/Jrophoff/professional-readme-generator#readme"
 }

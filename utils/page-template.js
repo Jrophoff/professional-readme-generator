@@ -54,6 +54,8 @@ function generateMarkdown(data) {
 - [Usage](#usage)
 - [Contributors](#contributors)
 - [Tests](#tests)
+- [Screenshot](#screenshot)
+- [Link](#link)
 - [Questions](#questions)
     - [GitHub](#github)
     - [Email](#email)
@@ -67,7 +69,7 @@ function generateMarkdown(data) {
 
 #### ${data.installation}
 
-### Usage
+## Usage
 
 #### ${data.usage}
 
@@ -79,8 +81,16 @@ function generateMarkdown(data) {
 
 #### ${data.tests}
 
+## Screenshot
+
+
+
+## Link
+
+
+
 ## Questions
-If you have further questions please reach out via GitHub or Email.
+#### If you have further questions please reach out via GitHub or Email.
 ### GitHub:
 #### <a href="https://github.com/${data.github}">Github</a>
 

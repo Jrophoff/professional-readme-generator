@@ -131,7 +131,6 @@ const questions = () => {
     ]) 
     .then(function(info) {
         var dataString = generateMarkdown(info)
-        console.log(dataString);
         writeToFile('output.md', dataString);
     })
 };
